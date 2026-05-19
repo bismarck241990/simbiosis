@@ -32,7 +32,7 @@ PWA offline-first para agricultura familiar (solo, pragas, consórcio e “Plant
 3. Crie o banco no phpMyAdmin:
    - Abra: `http://localhost/phpmyadmin`
    - Crie um banco chamado: `simbiosis_lite`
-   - Importe o arquivo: `db/esquema.sql`
+   - Importe o arquivo: `db/banco.sql`
 4. Abra no navegador:
    - `http://localhost/SIMBIOSIS/`
 
