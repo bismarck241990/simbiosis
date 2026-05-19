@@ -90,5 +90,5 @@ Se precisar mudar, use variáveis de ambiente:
 
 ## Versão do sistema
 
-A versão 0.4.6.
+A versão 0.0.1.
 
