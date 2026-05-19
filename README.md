@@ -88,14 +88,7 @@ Se precisar mudar, use variáveis de ambiente:
 - `RQ_DB_PASS`
 - `RQ_DB_CHARSET`
 
-## Arquivos úteis para a banca (TXT)
-
-- `PITCH_TECNICO_5_MINUTOS.txt`
-- `APRESENTACAO_PROGRAMACAO.txt`
-- `EXPLICACAO_DO_SISTEMA.txt`
-- `TUTORIAL_INSTALACAO_LOCAL.txt`
-
 ## Versão do sistema
 
-A versão fica definida em `inicio.php` na variável `$appVersion`.
+A versão 0.4.6.
 
