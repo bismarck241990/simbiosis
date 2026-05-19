@@ -1,0 +1,93 @@
+TUTORIAL - COMO INSTALAR E RODAR O SIMBIOSIS LITE LOCALMENTE (Windows)
+
+1) O que você precisa ter instalado
+- XAMPP (Apache + PHP + MySQL)
+  - Pode baixar no site oficial do XAMPP.
+- Um navegador (Chrome ou Edge recomendado).
+
+2) Onde colocar a pasta do projeto
+1. Abra a pasta do XAMPP no seu computador.
+2. Entre em: xampp\htdocs\
+3. Copie a pasta do projeto para dentro de htdocs.
+   Exemplo final:
+   C:\xampp\htdocs\SIMBIOSIS\
+
+3) Criar o banco de dados (MySQL/MariaDB)
+1. Abra o XAMPP Control Panel.
+2. Clique em START no Apache.
+3. Clique em START no MySQL.
+4. Abra o navegador e entre em:
+   http://localhost/phpmyadmin
+5. Crie um banco novo com o nome:
+   simbiosis_lite
+6. Com o banco criado, clique nele e vá em “Importar”.
+7. Selecione o arquivo do projeto:
+   C:\xampp\htdocs\SIMBIOSIS\db\esquema.sql
+8. Clique em “Executar”.
+
+Pronto: o banco e as tabelas vão ser criados.
+
+4) Configurar o acesso do banco (se precisar)
+Por padrão, o sistema usa:
+- host: 127.0.0.1
+- porta: 3306
+- banco: simbiosis_lite
+- usuário: root
+- senha: (vazia)
+
+Se no seu XAMPP estiver diferente, você pode ajustar por variáveis de ambiente:
+- RQ_DB_HOST
+- RQ_DB_PORT
+- RQ_DB_NAME
+- RQ_DB_USER
+- RQ_DB_PASS
+- RQ_DB_CHARSET
+
+Obs: em ambiente local do XAMPP geralmente não precisa mexer.
+
+5) Abrir o sistema no navegador
+Com o Apache ligado, abra:
+http://localhost/SIMBIOSIS/
+
+6) Se quiser rodar SEM Apache (opcional)
+Você também pode abrir com o servidor embutido do PHP:
+1. Abra o PowerShell na pasta do projeto:
+   C:\xampp\htdocs\SIMBIOSIS
+2. Rode o comando:
+   php -S localhost:8000 -t C:\xampp\htdocs\SIMBIOSIS
+3. Abra no navegador:
+   http://localhost:8000/
+
+7) Instalar no smartphone (como app)
+Android (Chrome):
+1. Abra o link do sistema no Chrome do celular.
+2. Toque em “Adicionar à tela inicial” / “Instalar”.
+3. Confirme.
+
+iPhone (Safari):
+1. Abra o link no Safari.
+2. Toque em “Compartilhar”.
+3. Toque em “Adicionar à Tela de Início”.
+
+8) Teste rápido pra ver se tá funcionando
+1. Abra o sistema.
+2. Faça o cadastro (nome e comunidade).
+3. Vá no Diário e faça um registro (ex.: Planta Falante).
+4. Desligue a internet do celular e faça mais um registro.
+5. Ligue a internet e veja a sincronização ficar verde quando concluir.
+
+9) Problemas comuns (soluções rápidas)
+- “Página não abre / 404”
+  - Confira se a pasta está em: C:\xampp\htdocs\SIMBIOSIS\
+  - Confira se o Apache está ligado no XAMPP.
+
+- “Erro de banco / API”
+  - Confira se o MySQL está ligado.
+  - Confira se o banco simbiosis_lite existe e foi importado.
+
+- “Não instala como app”
+  - Use HTTPS em produção.
+  - Em local, pode funcionar no localhost, mas depende do navegador.
+
+FIM
+

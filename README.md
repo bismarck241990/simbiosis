@@ -98,3 +98,4 @@ Se precisar mudar, use variáveis de ambiente:
 ## Versão do sistema
 
 A versão fica definida em `inicio.php` na variável `$appVersion`.
+
